@@ -31,13 +31,14 @@ ALLOWED_HOSTS = ['24af20355ec14a48acaaa5a682646da4.vfs.cloud9.eu-west-1.amazonaw
 # Application definition
 
 INSTALLED_APPS = [
-    
+    'movies',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
