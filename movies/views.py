@@ -8,14 +8,14 @@ from .models import Movie
 
 
 def index(request):
-     """ A file automatically created in each Django project. """
+    """ A file automatically created in each Django project. """
     newest_movies = Movie.objects.order_by('-release_date')[:15]
     context = {'newest_movies': newest_movies}
     return render(request, 'movies/index.html', context)
     
     
 def show(request, movie_id):
-     """ A file automatically created in each Django project. """
+    """ A file automatically created in each Django project. """
     try:
         movie = Movie.objects.get(pk=movie_id)
     except Movie.DoesNotExist as exc:
