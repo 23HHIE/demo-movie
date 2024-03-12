@@ -15,6 +15,6 @@ def show(request, movie_id):
     try:
         movie = Movie.objects.get(pk=movie_id)
     except Movie.DoesNotExist:
-        raise Http404("Please check the movie name again")
+        raise Http404("Bear it in mind, you might want to check the name of the movie")
     return render(request, 'movies/show.html', {'movie': movie})
 
