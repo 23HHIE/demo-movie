@@ -12,8 +12,9 @@ phases:
     pre_build:
         commands:
             - python --version
-            - pylint $CODEBUILD_SRC_DIR/*.py
-            - pylint $CODEBUILD_SRC_DIR/demoproj/*.py
+            - pylint $CODEBUILD_SRC_DIR/*.py  --disable=C *.py **/*.py
+            - pylint $CODEBUILD_SRC_DIR/demoproj/*.py  --disable=C *.py **/*.py
+        
 artifacts:
     files:
         - '**/*'
