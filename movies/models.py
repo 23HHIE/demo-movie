@@ -1,10 +1,11 @@
-""" A file automatically created in each Django project. """
+
 
 from django.db import models
 
 # Create your models here.
 # Create your models here.
 class Movie(models.Model):
+    """ A file automatically created in each Django project. """
     # each class variable represents a database i.e. table field in the model
     title = models.CharField(max_length=200)
     director = models.CharField(max_length=30)
