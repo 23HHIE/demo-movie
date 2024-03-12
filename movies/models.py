@@ -1,3 +1,5 @@
+""" A file automatically created in each Django project. """
+
 from django.db import models
 
 # Create your models here.
@@ -12,3 +14,4 @@ class Movie(models.Model):
 
     def __str__(self):
         return self.title + " - " + self.director
+        

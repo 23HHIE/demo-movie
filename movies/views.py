@@ -1,3 +1,5 @@
+""" A file automatically created in each Django project. """
+
 from django.http import Http404
 from django.shortcuts import render
 
