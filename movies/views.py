@@ -18,7 +18,7 @@ def show(request, movie_id):
     """ A file automatically created in each Django project. """
     try:
         movie = Movie.objects.get(pk=movie_id)
-    except Movie.DoesNotExist:
-        raise Http404("Bear it in mind, you might want to check the name of the movie")
+    except Movie.DoesNotExist as exc:
+        raise Http404("Bear it in mind, you might want to check the name of the movie") from exc
     return render(request, 'movies/show.html', {'movie': movie})
 
