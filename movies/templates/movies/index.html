@@ -2,6 +2,7 @@
 {% if newest_movies %}
     <ul>
      {% for movie in newest_movies %}
+        <p>new</p>
         <li><a href="{% url 'movies:show' movie.id %}">{{ movie.title }}</a></li>
      {% endfor %}
     </ul>
