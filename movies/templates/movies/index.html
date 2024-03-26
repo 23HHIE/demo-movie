@@ -3,6 +3,7 @@
     <ul>
      {% for movie in newest_movies %}
         <p>new</p>
+        <p>peace and love myself</p>
         <li><a href="{% url 'movies:show' movie.id %}">{{ movie.title }}</a></li>
      {% endfor %}
     </ul>
