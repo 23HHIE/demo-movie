@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '24af20355ec14a48acaaa5a682646da4.vfs.cloud9.eu-west-1.amazonaws.com',
     'mydemoproj-env.eba-g53u98jj.eu-west-1.elasticbeanstalk.com',
+    'x22180966ohh-env.eba-zpamnimp.eu-west-1.elasticbeanstalk.com'
 ]
 
 
